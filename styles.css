@@ -1,11 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@300&display=swap');
+
 * {
     box-sizing: border-box;
+}
+
+body {
+    font-family: "Maven Pro", sans-serif;
+}
+
+main {
+    margin-left: 1rem;
 }
 
 #portfolio-pic {
     max-width: 100%;
     width: 500px;
     height: auto;
+}
+
+#welcome {
+    color: #5b5b5b;
+    font-size: 0.875rem;
+    margin-left: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.intro-title {
+    font-size: 2.4rem;
+    letter-spacing: 1.5px;
+}
+
+.intro-paragraph {
+    color: #5b5b5b;
+    font-weight: 100;
+    line-height: 1.5;
+    font-size: 1.125rem;
+    text-align: left;
+}
+
+#resume-btn {
+    background-color: #eee;
+    color: #5b5b5b;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+#document {
+    width: 13px;
+}
+
+#github-btn {
+    background-color: #474559;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+    display: block;
+}
+
+#resume-btn:hover {
+    color: #ffc200;
+    transition: 0.2s ease-in;
+}
+
+#github-btn:hover {
+    background-color: #ffc200;
+    color: white;
+    transition: 0.2s ease-in;
+}
+
+#portfolio-img {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+#projects {
+    letter-spacing: 1px;
+    color: #353535;
+    text-align: center;
+}
+
+.projects-title,
+.experience-title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.title-dots {
+    color: #ffc200;
+}
+
+.project-img {
+    box-shadow: 0px 0px 9px 0px #909090;
+}
+
+.dot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #c2c2c2;
+    border-radius: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: #ffc200;
+}
+
+#project2,
+#project3,
+#project4,
+#project5 {
+    display: none;
+}
+
+.github-link {
+    text-decoration: none;
+    color: #353535;
+    font-size: 1.3rem;
+    display: block;
+}
+
+.live-view {
+    display: block;
+    margin-top: 20px;
+}
+
+.code {
+    color: transparent;
+    height: 10px;
+    margin-right: 5px;
+    transition: color 0.3s ease-out;
+    font-weight: bold;
+}
+
+.github-link:hover .code {
+    color: #ee5057;
+}
+
+.first-job,
+.second-job {
+    box-shadow: 0px 0px 9px 0px #909090;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.job-name,
+.date {
+    display: block;
+    font-size: 1rem;
+    color: #5b5b5b;
+    margin-top: 5px;
+}
+
+.date {
+    color: #ffc200;
+    font-size: 0.9rem;
+}
+
+.job-description .job-item {
+    list-style: square;
+    color: none;
+}
+
+.map-google {
+    max-width: 100%;
 }
 
 svg {
