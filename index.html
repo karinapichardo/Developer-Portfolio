@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <title>Karina Pichardo</title>
 </head>
 
@@ -48,14 +48,21 @@
         <section id="about">
             <h5 id="welcome">Welcome to my portfolio website!</h5>
             <!--            animation here-->
-            <h1 class="intro">Hi there, I'm Karina Pichardo</h1>
-            <p>I love creating awesome websites! I'm fascinated by technology and passionate about using my technical skills to help people achieve their goals. I love learning and I think it's amazing that as a developer, I'm basically a professional student - dream job!</p>
-
+            <h1 class="intro-title">Hi there, I'm Karina Pichardo</h1>
+            <p class="intro-paragraph">I love creating awesome websites! I'm fascinated by technology and passionate about using my technical skills to help people achieve their goals. I love learning and I think it's amazing that as a developer, I'm basically a professional student - dream job!</p>
             <a href="#" target="_blank" id="resume-btn">
-                Download Resume
+                <svg xmlns="http://www.w3.org/2000/svg" id="document" data-name="Layer 1" viewBox="0 0 24 24">
+                    <title>file, document, office, work, letter</title>
+                    <path d="M16.17,0H2V24H22V6.8ZM20,22H4V2h9V9h7ZM15,7V2h.25l4.29,5Z" />
+                    <rect x="6" y="12" width="12" height="2" />
+                    <rect x="6" y="15" width="12" height="2" />
+                    <rect x="6" y="18" width="12" height="2" />
+                    <rect x="6" y="7" width="5" height="2" />
+                </svg> Download Resume
             </a>
+
             <a href="https://github.com/karinapichardo" target="_blank" id="github-btn">
-                Github
+                View Github
             </a>
 
             <div id="portfolio-img">
@@ -64,25 +71,46 @@
         </section>
 
         <section id="projects">
-            <h2 class="projects-title">Projects I have worked on ...</h2>
+            <h2 class="projects-title">Projects I have worked on <span class="title-dots">...</span></h2>
             <!--            screenshots here plus arrows.. using pseduo elements plus html entities that we learned about-->
             <div class="projects-container">
-                <a href="https://karinapichardo.github.io/Gymso-Fitness/" target="_blank"><img src="images/project1.png" alt="screenshot of gymso fitness website"></a>
-                <a href="https://github.com/karinapichardo/Gymso-Fitness" target="_blank">Github Repository</a>
-                <a href="https://karinapichardo.github.io/Grid-Master-Class/" target="_blank"><img src="images/project2.png" alt="screenshot of grid masterclass website"></a>
-                <a href="https://github.com/karinapichardo/Grid-Master-Class" target="_blank">Github Repository</a>
-                <a href="https://karinapichardo.github.io/soft-landing-page/" target="_blank"><img src="images/project3.png" alt="screenshot of softlanding paage website"></a>
-                <a href="https://github.com/karinapichardo/soft-landing-page" target="_blank">Github Repository</a>
-                <a href="https://karinapichardo.github.io/Level-Website/" target="_blank"><img src="images/project4.png" alt="screenshot of hotel/travel website"></a>
-                <a href="https://github.com/karinapichardo/Level-Website" target="_blank">Github Repository</a>
-                <a href="https://karinapichardo.github.io/Survey-Form/" target="_blank"><img src="images/project5.jpg" alt="screenshot of survey form website"></a>
-                <a href="https://github.com/karinapichardo/Survey-Form" target="_blank">Github Repository</a>
+                <div id="project1">
+                    <a href="https://karinapichardo.github.io/Gymso-Fitness/" target="_blank"><img src="images/project1.png" alt="screenshot of gymso fitness website" class="project-img"></a>
+                    <a href="https://karinapichardo.github.io/Gymso-Fitness/" target="_blank" class="github-link live-view"><span class="code">&lt;</span>Live View<span class="code"> &sol; &gt;</span></a>
+                    <a href="https://github.com/karinapichardo/Gymso-Fitness" target="_blank" class="github-link"><span class="code">&lt;</span>Github Repository<span class="code"> &sol; &gt;</span></a>
+                </div>
+
+                <div id="project2">
+                    <a href="https://karinapichardo.github.io/Grid-Master-Class/" target="_blank"><img src="images/project2.png" alt="screenshot of grid masterclass website" class="project-img">
+                    </a>
+                    <a href="https://karinapichardo.github.io/Grid-Master-Class/" target="_blank" class="github-link live-view"><span class="code">&lt;</span>Live View<span class="code"> &sol; &gt;</span></a>
+                    <a href="https://github.com/karinapichardo/Grid-Master-Class" target="_blank" class="github-link"><span class="code">&lt;</span>Github Repository<span class="code"> &sol; &gt;</span></a>
+                </div>
+
+                <div id="project3">
+                    <a href="https://karinapichardo.github.io/soft-landing-page/" target="_blank"><img src="images/project3.png" alt="screenshot of softlanding paage website" class="project-img"></a>
+                    <a href="https://karinapichardo.github.io/soft-landing-page/" target="_blank" class="github-link live-view"><span class="code">&lt;</span>Live View<span class="code"> &sol; &gt;</span></a>
+                    <a href="https://github.com/karinapichardo/soft-landing-page" target="_blank" class="github-link"><span class="code">&lt;</span>Github Repository<span class="code"> &sol; &gt;</span></a>
+                </div>
+                <div id="project4">
+                    <a href="https://karinapichardo.github.io/Level-Website/" target="_blank"><img src="images/project4.png" alt="screenshot of hotel/travel website" class="project-img"></a>
+
+                    <a href="https://karinapichardo.github.io/Level-Website/" target="_blank" class="github-link live-view"><span class="code">&lt;</span>Live View<span class="code"> &sol; &gt;</span></a>
+
+                    <a href="https://github.com/karinapichardo/Level-Website" target="_blank" class="github-link"><span class="code">&lt;</span>Github Repository<span class="code"> &sol; &gt;</span></a>
+                </div>
+                <div id="project5">
+                    <a href="https://karinapichardo.github.io/Survey-Form/" target="_blank"><img src="images/project5.jpg" alt="screenshot of survey form website" class="project-img"></a>
+                    <a href="https://karinapichardo.github.io/Survey-Form/" target="_blank" class="github-link live-view"><span class="code">&lt;</span>Live View<span class="code"> &sol; &gt;</span></a>
+                    <a href="https://github.com/karinapichardo/Survey-Form" target="_blank" class="github-link"><span class="code">&lt;</span>Github Repository<span class="code"> &sol; &gt;</span></a>
+                </div>
 
                 <div class="dot-container">
                     <div class="dot" onclick="firstDot();"></div>
                     <div class="dot" onclick="secondDot();"></div>
                     <div class="dot" onclick="thirdDot();"></div>
                     <div class="dot" onclick="fourthDot();"></div>
+                    <div class="dot" onclick="fifthDot();"></div>
                 </div>
             </div>
         </section>
@@ -92,7 +120,8 @@
                 <div class="work-container">
                     <h2 class="experience-title">Experience</h2>
                     <div class="first-job">
-                        <h3 class="job-title">Webmaster Assistant <span class="job-name">Passaic County Technical Institute</span></h3>
+                        <h3 class="job-title">Webmaster Assistant <span class="job-name">Passaic County Technical Institute</span> <span class="date">2012-2013</span></h3>
+
                         <ul class="job-description">
                             <li class="job-item">Maintained website using HTML and CSS</li>
                             <li class="job-item">Reported to director of communications and development team to prioritize needs, resolve conflicts, develop content criteria, and choose solutions</li>
@@ -100,7 +129,7 @@
                         </ul>
                     </div>
                     <div class="second-job">
-                        <h3 class="job-title">Contributing Writer <span class="job-name">Data Driven Investor</span></h3>
+                        <h3 class="job-title">Contributing Writer <span class="job-name">Data Driven Investor</span><span class="date">2020</span></h3>
                         <ul class="job-description">
                             <li class="job-item">Perform research and write articles documenting my findings</li>
                             <li class="job-item">Topics include computer science / computer programming</li>
@@ -162,6 +191,5 @@
         <p>Copyright &#169; 2021 <span>Karina Pichardo</span></p>
     </footer>
 </body>
-
 
 </html>
