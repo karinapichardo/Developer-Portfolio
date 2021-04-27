@@ -8,6 +8,37 @@ body {
     font-family: "Maven Pro", sans-serif;
 }
 
+nav {
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+    padding-left: 2px;
+}
+
+.color-mode {
+    display: none;
+}
+
+nav #main-nav {
+    display: none;
+    margin-top: -5px;
+}
+
+nav a.icon {
+    width: 40px;
+    height: 6px;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+}
+
+
 .name {
     display: flex;
     justify-content: flex-start;
@@ -27,44 +58,35 @@ body {
 }
 
 #🔹-Icon-Color:hover {
-    fill: #ffc200;
+    fill: #1D1D1D;
     transition: 0.2s ease-in;
 }
 
-/*
 #main-nav li a {
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     color: #5b5b5b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -35px;
 }
 
 #main-nav li a:hover {
-    border-top: 4px solid #ffc200;
-    border-bottom: 4px solid #ffc200;
-    padding: 1px 0;
+    text-decoration: 4px underline #ffc200;
     color: black;
+    text-underline-position: under;
 }
-*/
 
 li {
     list-style: none;
 }
 
-
-
-/*
-.nav-item {
-    display: inline;
-    font-size: 1.1rem;
-    color: white;
-    text-decoration: none;
-}
-*/
-
 main {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    margin-top: 10rem;
 }
 
 #portfolio-pic {
