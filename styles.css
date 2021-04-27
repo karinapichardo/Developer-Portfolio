@@ -98,6 +98,7 @@ main {
     line-height: 1.5;
     font-size: 1.125rem;
     text-align: left;
+    margin-bottom: 2rem;
 }
 
 #resume-btn {
@@ -152,6 +153,10 @@ main {
     text-align: center;
 }
 
+.project-img {
+    box-shadow: 0px 0px 9px 0px #909090;
+}
+
 .projects-title,
 .experience-title,
 .extras-title,
@@ -159,14 +164,11 @@ main {
     font-size: 2rem;
     text-align: center;
     margin-top: 5rem;
+    color: #353535;
 }
 
 .title-dots {
     color: #ffc200;
-}
-
-.project-img {
-    box-shadow: 0px 0px 9px 0px #909090;
 }
 
 .dot-container {
@@ -229,6 +231,10 @@ main {
 }
 
 
+#experience {
+    padding-bottom: 2rem;
+}
+
 .first-job,
 .second-job,
 .first-school,
@@ -272,6 +278,10 @@ main {
     color: none;
 }
 
+hr {
+    border-color: #ff94b4;
+}
+
 .map-google {
     max-width: 100%;
     margin-top: 3rem;
@@ -285,6 +295,65 @@ img {
     max-width: 100%;
     width: 850px;
 }
+
+.links-title {
+    font-size: 1.7rem;
+}
+
+a.social {
+    display: inline-block;
+    text-indent: -9999px;
+    margin-left: 5px;
+    width: 35px;
+    height: 35px;
+    background-size: 35px 35px;
+    opacity: .4;
+    transition: all .5s;
+}
+
+a.social:hover {
+    opacity: 1;
+}
+
+a.twitter {
+    background-image: url(images/twitter.svg);
+}
+
+a.linkedin {
+    background-image: url(images/linkedin.svg);
+}
+
+a.github {
+    background-image: url(images/github.svg);
+}
+
+a.medium {
+    background-image: url(images/medium.svg);
+}
+
+a.dev {
+    background-image: url(images/dev.svg);
+}
+
+a.email {
+    background-image: url(images/email.svg);
+}
+
+a.ddi {
+    background-image: url(images/ddi.png);
+}
+
+.contact-list {
+    text-align: center;
+    margin-left: -40px;
+}
+
+.contact-list .contact-item {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 footer {
     background-color: #ff94b4;
