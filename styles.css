@@ -8,8 +8,75 @@ body {
     font-family: "Maven Pro", sans-serif;
 }
 
+.name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.name-logo {
+    margin-top: 40px;
+    font-size: 1.25rem;
+}
+
+.name-logo:hover {
+    color: #ffc200;
+    transition: 0.2s ease-in;
+}
+
+#🔹-Icon-Color:hover {
+    fill: #ffc200;
+    transition: 0.2s ease-in;
+}
+
+
+/*
+svg:hover {
+    fill: #ffc200;
+}
+
+#Icons:hover {
+    fill: #ffc200;
+}
+*/
+
+
+
+/*
+#main-nav li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #5b5b5b;
+}
+
+#main-nav li a:hover {
+    border-top: 4px solid #ffc200;
+    border-bottom: 4px solid #ffc200;
+    padding: 1px 0;
+    color: black;
+}
+*/
+
+li {
+    list-style: none;
+}
+
+
+
+/*
+.nav-item {
+    display: inline;
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+}
+*/
+
 main {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 #portfolio-pic {
@@ -91,9 +158,12 @@ main {
 }
 
 .projects-title,
-.experience-title {
+.experience-title,
+.extras-title,
+.links-title {
     font-size: 2rem;
     text-align: center;
+    margin-top: 5rem;
 }
 
 .title-dots {
@@ -130,8 +200,7 @@ main {
 
 #project2,
 #project3,
-#project4,
-#project5 {
+#project4 {
     display: none;
 }
 
@@ -156,18 +225,39 @@ main {
 }
 
 .github-link:hover .code {
-    color: #ee5057;
+    color: #ffc200;
+}
+
+.code-title {
+    color: #ffc200;
+    font-weight: bold;
 }
 
 .first-job,
-.second-job {
+.second-job,
+.first-school,
+.second-school,
+.extra-info {
     box-shadow: 0px 0px 9px 0px #909090;
     padding: 1rem;
     margin-bottom: 1rem;
+    max-width: 400px;
+    max-height: 450px;
+    line-height: 1.5;
+}
+
+.cert-link {
+    color: #353535;
+}
+
+.cert-link:hover {
+    color: #ffc200;
+    transition: 0.2s ease-in;
 }
 
 .job-name,
-.date {
+.date,
+.major {
     display: block;
     font-size: 1rem;
     color: #5b5b5b;
@@ -186,6 +276,7 @@ main {
 
 .map-google {
     max-width: 100%;
+    margin-top: 3rem;
 }
 
 svg {
@@ -195,4 +286,17 @@ svg {
 img {
     max-width: 100%;
     width: 850px;
+}
+
+footer {
+    background-color: #ff94b4;
+    height: 6vh;
+    color: white;
+    margin: 0 -0.5rem -0.5rem -0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 5rem;
+
 }
