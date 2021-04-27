@@ -167,6 +167,14 @@ main {
     color: #353535;
 }
 
+.job-title,
+.school-name {
+    background-color: #eee;
+    padding: 1rem;
+    margin: -16px;
+    margin-bottom: 10px;
+}
+
 .title-dots {
     color: #ffc200;
 }
@@ -248,7 +256,17 @@ main {
     line-height: 1.5;
     border-bottom: 1px solid #ffc200;
     border-radius: 6px;
+    cursor: pointer;
 }
+
+.first-job:hover,
+.second-job:hover,
+.first-school:hover,
+.second-school:hover,
+.extra-info:hover {
+    border-bottom: 1px solid #ff94b4;
+}
+
 
 .cert-link {
     color: #353535;
@@ -265,7 +283,8 @@ main {
     display: block;
     font-size: 1rem;
     color: #5b5b5b;
-    margin-top: 5px;
+    font-weight: 400;
+    margin-bottom: 1rem;
 }
 
 .date {
