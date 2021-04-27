@@ -1,3 +1,12 @@
+function hamburgerMenu() {
+    var x = document.getElementById("main-nav");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
 var text = ['Karina Pichardo.', 'a Frontend Developer.']
 var index = 0;
 var element = document.getElementById('name-title');
