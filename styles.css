@@ -17,6 +17,7 @@ body {
 
 .name-logo {
     margin-top: 40px;
+    margin-left: 10px;
     font-size: 1.25rem;
 }
 
@@ -29,19 +30,6 @@ body {
     fill: #ffc200;
     transition: 0.2s ease-in;
 }
-
-
-/*
-svg:hover {
-    fill: #ffc200;
-}
-
-#Icons:hover {
-    fill: #ffc200;
-}
-*/
-
-
 
 /*
 #main-nav li a {
@@ -95,7 +83,14 @@ main {
 .intro-title {
     font-size: 2.4rem;
     letter-spacing: 1.5px;
+    line-height: 1.2;
 }
+
+#name-title {
+    color: #ffc200;
+    font-size: 2rem;
+}
+
 
 .intro-paragraph {
     color: #5b5b5b;
@@ -148,8 +143,8 @@ main {
 #portfolio-img {
     margin-top: 100px;
     margin-bottom: 100px;
+    cursor: pointer;
 }
-
 
 #projects {
     letter-spacing: 1px;
@@ -233,6 +228,7 @@ main {
     font-weight: bold;
 }
 
+
 .first-job,
 .second-job,
 .first-school,
@@ -244,6 +240,8 @@ main {
     max-width: 400px;
     max-height: 450px;
     line-height: 1.5;
+    border-bottom: 1px solid #ffc200;
+    border-radius: 6px;
 }
 
 .cert-link {
@@ -280,7 +278,7 @@ main {
 }
 
 svg {
-    width: 60px;
+    width: 40px;
 }
 
 img {
