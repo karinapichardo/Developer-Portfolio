@@ -238,6 +238,11 @@ main {
     transform: rotateZ(60deg) translate(-5em, 7.5em);
 }
 
+.long-skill {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
 .tech-skills:hover::after,
 .tech-skills:focus::after {
     animation: sheen 1s forwards;
