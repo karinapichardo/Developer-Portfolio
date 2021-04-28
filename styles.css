@@ -4,8 +4,17 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Maven Pro", sans-serif;
+}
+
+#nav-expanded {
+    display: none;
 }
 
 nav {
@@ -93,6 +102,10 @@ main {
 
 /*about section */
 
+#portfolio-img {
+    text-align: center;
+}
+
 #portfolio-pic {
     max-width: 100%;
     width: 500px;
@@ -174,7 +187,11 @@ main {
 }
 
 .skills-title {
-    font-size: 1.8rem;
+    font-size: 1.59rem;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    color: #353535;
 }
 
 .pink-code {
@@ -233,6 +250,36 @@ main {
     100% {
         transform: rotateZ(60deg) translate(1em, -9em);
     }
+}
+
+/*projects section*/
+
+#projects {
+    letter-spacing: 1px;
+    color: #353535;
+    text-align: center;
+}
+
+.project-img {
+    box-shadow: 0px 0px 9px 0px #909090;
+}
+
+.projects-title,
+.experience-title,
+.extras-title,
+.links-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+    color: #353535;
+}
+
+.job-title,
+.school-name {
+    background-color: #eee;
+    padding: 1rem;
+    margin: -16px;
+    margin-bottom: 10px;
 }
 
 .title-dots {
@@ -299,37 +346,6 @@ main {
 }
 
 
-/*projects section*/
-
-#projects {
-    letter-spacing: 1px;
-    color: #353535;
-    text-align: center;
-}
-
-.project-img {
-    box-shadow: 0px 0px 9px 0px #909090;
-}
-
-.projects-title,
-.experience-title,
-.extras-title,
-.links-title,
-.skills-title {
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 5rem;
-    color: #353535;
-}
-
-.job-title,
-.school-name {
-    background-color: #eee;
-    padding: 1rem;
-    margin: -16px;
-    margin-bottom: 10px;
-}
-
 /*experience section*/
 
 #experience {
@@ -343,13 +359,15 @@ main {
 .extra-info {
     box-shadow: 0px 0px 9px 0px #909090;
     padding: 1rem;
-    margin-bottom: 1rem;
     max-width: 450px;
     max-height: 100%;
     line-height: 1.5;
     border-bottom: 1px solid #ffc200;
     border-radius: 6px;
     cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 2rem;
 }
 
 .first-job:hover,
@@ -359,7 +377,6 @@ main {
 .extra-info:hover {
     border-bottom: 1px solid #ff94b4;
 }
-
 
 .cert-link {
     color: #353535;
@@ -396,8 +413,16 @@ hr {
 
 /*contact section*/
 
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .map-google {
     max-width: 100%;
+    width: 700px;
+    /*    width: 600px;*/
     margin-top: 3rem;
 }
 
@@ -480,5 +505,86 @@ footer {
     align-items: center;
     font-weight: bold;
     margin-top: 5rem;
+
+}
+
+@media (min-width: 700px) {
+    .name {
+        margin-left: 15px;
+    }
+
+    #ham-menu-icon {
+        display: none;
+    }
+
+    #nav-expanded {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -45px;
+        margin-left: 80px;
+    }
+
+    #nav-expanded li a {
+        margin-right: 2rem;
+        text-decoration: none;
+        color: rgba(0, 0, 0, .5);
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    #nav-expanded li a:hover {
+        text-decoration: 4px underline #ffc200;
+        color: black;
+        text-underline-position: under;
+    }
+
+    #projects {
+        position: relative;
+    }
+
+    .project-container {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+
+    #project1::before,
+    #project2::before,
+    #project3::before,
+    #project4::before {
+        content: '←';
+        color: #353535;
+        font-size: 4rem;
+        position: absolute;
+        top: 40%;
+        margin-left: -75px
+    }
+
+    #project1::after,
+    #project2::after,
+    #project3::after,
+    #project4::after {
+        content: '→';
+        color: #353535;
+        font-size: 4rem;
+        position: absolute;
+        top: 40%;
+        margin-left: -40px;
+        width: 100%;
+    }
+
+
+
+    .projects-container {
+        display: block;
+        margin: 0 auto;
+        margin-left: 80px;
+        margin-right: 80px;
+
+    }
 
 }
