@@ -482,7 +482,6 @@ a.ddi {
 
 footer {
     background-color: black;
-    /*    background-color: #ff94b4;*/
     height: 6vh;
     color: #ffc200;
     margin: 0 -0.5rem -0.5rem -0.5rem;
@@ -535,41 +534,6 @@ footer {
         margin-right: 80px;
     }
 
-
-    /*
-    #project1::before,
-    #project2::before,
-    #project3::before,
-    #project4::before {
-        content: '←';
-        color: #353535;
-        font-size: 4rem;
-        position: absolute;
-        top: 40%;
-        margin-left: -75px
-    }
-
-    #project1::after,
-    #project2::after,
-    #project3::after,
-    #project4::after {
-        content: '→';
-        color: #353535;
-        font-size: 4rem;
-        position: absolute;
-        top: 40%;
-        margin-left: -40px;
-        width: 100%;
-    }
-
-    .projects-container {
-        display: block;
-        margin: 0 auto;
-        margin-left: 80px;
-        margin-right: 80px;
-    }
-*/
-
 }
 
 @media (min-width: 1024px) {
@@ -603,5 +567,13 @@ footer {
         margin-bottom: 5rem;
     }
 
+}
 
+@media (min-width: 1280px) {
+
+    .first-job,
+    .first-school,
+    #treehouse-container {
+        margin-right: -200px;
+    }
 }
