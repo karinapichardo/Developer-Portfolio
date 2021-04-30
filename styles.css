@@ -26,6 +26,7 @@ nav {
 
 .color-mode {
     display: none;
+
 }
 
 nav #main-nav {
@@ -41,7 +42,6 @@ nav a.icon {
     right: 10px;
     top: 25px;
 }
-
 
 .name {
     display: flex;
@@ -407,7 +407,6 @@ hr {
 .map-google {
     max-width: 100%;
     width: 700px;
-    /*    width: 600px;*/
     margin-top: 3rem;
 }
 
@@ -493,6 +492,18 @@ footer {
 }
 
 @media (min-width: 700px) {
+    .color-mode {
+        display: block;
+        margin-top: -65px;
+        float: right;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .color-title {
+        display: inline-block;
+    }
+
     .name {
         margin-left: 15px;
     }
@@ -506,7 +517,7 @@ footer {
         justify-content: center;
         align-items: center;
         margin-top: -45px;
-        margin-left: 80px;
+        margin-left: 20px;
     }
 
     #nav-expanded li a {
@@ -539,15 +550,7 @@ footer {
 @media (min-width: 1024px) {
 
     .color-mode {
-        display: block;
-        margin-top: -65px;
-        float: right;
         margin-right: 50px;
-        cursor: pointer;
-    }
-
-    .color-title {
-        display: inline-block;
     }
 
     .about-container,
