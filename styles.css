@@ -538,6 +538,18 @@ footer {
 
 @media (min-width: 1024px) {
 
+    .color-mode {
+        display: block;
+        margin-top: -65px;
+        float: right;
+        margin-right: 50px;
+        cursor: pointer;
+    }
+
+    .color-title {
+        display: inline-block;
+    }
+
     .about-container,
     .contact-container {
         display: flex;
