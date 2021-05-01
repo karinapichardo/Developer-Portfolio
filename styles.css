@@ -565,6 +565,30 @@ footer {
         margin-right: 2rem;
     }
 
+    #project1::before,
+    #project2::before,
+    #project3::before,
+    #project4::before {
+        content: '←';
+        color: #353535;
+        font-size: 4rem;
+        position: absolute;
+        top: 40%;
+        margin-left: -75px;
+    }
+
+    #project1::after,
+    #project2::after,
+    #project3::after,
+    #project4::after {
+        content: '→';
+        color: #353535;
+        font-size: 4rem;
+        position: absolute;
+        top: 40%;
+        margin-left: 430px;
+    }
+
     .work-container,
     .education-container,
     .extra-education {
