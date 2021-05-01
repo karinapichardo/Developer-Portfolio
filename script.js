@@ -1,3 +1,5 @@
+//functionality for hamburger menu
+
 function hamburgerMenu() {
     var x = document.getElementById("main-nav");
     if (x.style.display === "block") {
@@ -6,6 +8,8 @@ function hamburgerMenu() {
         x.style.display = "block";
     }
 }
+
+//functionality for color mode element
 
 function colorMode() {
     document.body.style.background = 'black';
@@ -27,6 +31,9 @@ function colorMode() {
         x[i].style.opacity = '1';
     }
 }
+
+//functionality to change the text on about section
+
 var text = ['Karina Pichardo.', 'a Frontend Developer.']
 var index = 0;
 var element = document.getElementById('name-title');
@@ -39,6 +46,9 @@ window.setInterval(function textChange() {
         index = 0;
     }
 }, 1500);
+
+
+//functionality for dots to display only one project at a time 
 
 function firstDot() {
     document.getElementById('project1').style.display = 'block';
