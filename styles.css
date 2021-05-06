@@ -337,29 +337,17 @@ main {
     padding-bottom: 2rem;
 }
 
-.first-job,
-.second-job,
-.first-school,
-.second-school,
-.extra-info {
+.card {
+    margin-top: 2rem;
     box-shadow: 0px 0px 9px 0px #909090;
     padding: 1rem;
-    max-width: 450px;
-    max-height: 100%;
     line-height: 1.5;
     border-bottom: 1px solid #ffc200;
     border-radius: 6px;
     cursor: pointer;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 2rem;
 }
 
-.first-job:hover,
-.second-job:hover,
-.first-school:hover,
-.second-school:hover,
-.extra-info:hover {
+.card:hover {
     border-bottom: 1px solid #ff94b4;
 }
 
@@ -375,16 +363,16 @@ main {
 .job-name,
 .date,
 .major {
-    display: block;
+    margin-top: 1rem;
     font-size: 1rem;
     color: #5b5b5b;
     font-weight: 400;
-    margin-bottom: 1rem;
 }
 
 .date {
     color: #ffc200;
     font-size: 0.9rem;
+    display: block;
 }
 
 .job-description .job-item {
@@ -491,7 +479,7 @@ footer {
 
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
     .color-mode {
         display: block;
         margin-top: -65px;
@@ -545,6 +533,19 @@ footer {
         margin-right: 80px;
     }
 
+    .work-container,
+    .education-container,
+    .extra-education {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex-basis: 55%;
+        margin-right: 1rem;
+
+    }
 }
 
 @media (min-width: 1024px) {
@@ -589,15 +590,6 @@ footer {
         margin-left: 430px;
     }
 
-    .work-container,
-    .education-container,
-    .extra-education {
-        display: flex;
-        flex-direction: row;
-        margin-top: 3rem;
-    }
-
-
     .links-container {
         margin-right: 2rem;
     }
@@ -606,13 +598,10 @@ footer {
         margin-bottom: 5rem;
     }
 
-}
+    .card {
+        flex-basis: 35%;
+        margin-right: 1rem;
 
-@media (min-width: 1280px) {
-
-    .first-job,
-    .first-school,
-    #treehouse-container {
-        margin-right: -200px;
     }
+
 }
