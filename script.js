@@ -15,6 +15,7 @@ function colorMode() {
     document.body.style.background = 'black';
     document.body.style.color = 'white';
     document.querySelector('.cert-link').style.color = '#ffc200';
+    document.querySelector('.name-logo').style.color = 'black';
 
     var j, k;
     j = document.querySelectorAll('.mode-text');
