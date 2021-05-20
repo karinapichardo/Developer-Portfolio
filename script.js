@@ -83,3 +83,12 @@ function fourthDot() {
     document.getElementById('project5').style.display = 'none';
 
 }
+
+function fifthDot() {
+    document.getElementById('project5').style.display = 'block';
+    document.getElementById('project1').style.display = 'none';
+    document.getElementById('project2').style.display = 'none';
+    document.getElementById('project3').style.display = 'none';
+    document.getElementById('project4').style.display = 'none';
+
+}
