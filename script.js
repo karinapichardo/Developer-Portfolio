@@ -14,7 +14,6 @@ function hamburgerMenu() {
 function colorMode() {
     document.body.style.background = 'black';
     document.body.style.color = 'white';
-    document.querySelector('.cert-link').style.color = '#ffc200';
     document.querySelector('.name-logo').style.color = 'black';
 
     var j, k;
@@ -52,43 +51,43 @@ window.setInterval(function textChange() {
 //functionality for dots to display only one project at a time 
 
 function firstDot() {
-    document.getElementById('project1').style.display = 'block';
-    document.getElementById('project2').style.display = 'none';
-    document.getElementById('project3').style.display = 'none';
-    document.getElementById('project4').style.display = 'none';
-    document.getElementById('project5').style.display = 'none';
+    document.getElementById('article1').style.display = 'block';
+    document.getElementById('article2').style.display = 'none';
+    document.getElementById('article3').style.display = 'none';
+    document.getElementById('article4').style.display = 'none';
+    document.getElementById('article5').style.display = 'none';
 }
 
 function secondDot() {
-    document.getElementById('project2').style.display = 'block';
-    document.getElementById('project1').style.display = 'none';
-    document.getElementById('project3').style.display = 'none';
-    document.getElementById('project4').style.display = 'none';
-    document.getElementById('project5').style.display = 'none';
+    document.getElementById('article2').style.display = 'block';
+    document.getElementById('article1').style.display = 'none';
+    document.getElementById('article3').style.display = 'none';
+    document.getElementById('article4').style.display = 'none';
+    document.getElementById('article5').style.display = 'none';
 }
 
 function thirdDot() {
-    document.getElementById('project3').style.display = 'block';
-    document.getElementById('project1').style.display = 'none';
-    document.getElementById('project2').style.display = 'none';
-    document.getElementById('project4').style.display = 'none';
-    document.getElementById('project5').style.display = 'none';
+    document.getElementById('article3').style.display = 'block';
+    document.getElementById('article1').style.display = 'none';
+    document.getElementById('article2').style.display = 'none';
+    document.getElementById('article4').style.display = 'none';
+    document.getElementById('article5').style.display = 'none';
 }
 
 function fourthDot() {
-    document.getElementById('project4').style.display = 'block';
-    document.getElementById('project1').style.display = 'none';
-    document.getElementById('project2').style.display = 'none';
-    document.getElementById('project3').style.display = 'none';
-    document.getElementById('project5').style.display = 'none';
+    document.getElementById('article4').style.display = 'block';
+    document.getElementById('article1').style.display = 'none';
+    document.getElementById('article2').style.display = 'none';
+    document.getElementById('article3').style.display = 'none';
+    document.getElementById('article5').style.display = 'none';
 
 }
 
 function fifthDot() {
-    document.getElementById('project5').style.display = 'block';
-    document.getElementById('project1').style.display = 'none';
-    document.getElementById('project2').style.display = 'none';
-    document.getElementById('project3').style.display = 'none';
-    document.getElementById('project4').style.display = 'none';
+    document.getElementById('article5').style.display = 'block';
+    document.getElementById('article1').style.display = 'none';
+    document.getElementById('article2').style.display = 'none';
+    document.getElementById('article3').style.display = 'none';
+    document.getElementById('article4').style.display = 'none';
 
 }
