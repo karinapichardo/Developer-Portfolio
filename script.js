@@ -12,7 +12,7 @@ function hamburgerMenu() {
 //functionality for color mode element
 
 function colorMode() {
-    document.body.style.background = 'black';
+    document.body.style.backgroundColor = 'black';
     document.body.style.color = 'white';
     document.querySelector('.name-logo').style.color = 'black';
 
@@ -48,46 +48,36 @@ window.setInterval(function textChange() {
 }, 1500);
 
 
-//functionality for dots to display only one project at a time 
+//functionality for dots to display only one article at a time 
+
+const articles = document.querySelectorAll('.articles');
+
+function articleDisplay(indexNum) {
+    for (let i = 0; i < articles.length; i++) {
+        if (articles[i] === articles[indexNum]) {
+            articles[i].style.display = 'block';
+        } else {
+            articles[i].style.display = 'none';
+        }
+    }
+}
 
 function firstDot() {
-    document.getElementById('article1').style.display = 'block';
-    document.getElementById('article2').style.display = 'none';
-    document.getElementById('article3').style.display = 'none';
-    document.getElementById('article4').style.display = 'none';
-    document.getElementById('article5').style.display = 'none';
+    return articleDisplay(0);
 }
 
 function secondDot() {
-    document.getElementById('article2').style.display = 'block';
-    document.getElementById('article1').style.display = 'none';
-    document.getElementById('article3').style.display = 'none';
-    document.getElementById('article4').style.display = 'none';
-    document.getElementById('article5').style.display = 'none';
+    return articleDisplay(1);
 }
 
 function thirdDot() {
-    document.getElementById('article3').style.display = 'block';
-    document.getElementById('article1').style.display = 'none';
-    document.getElementById('article2').style.display = 'none';
-    document.getElementById('article4').style.display = 'none';
-    document.getElementById('article5').style.display = 'none';
+    return articleDisplay(2);
 }
 
 function fourthDot() {
-    document.getElementById('article4').style.display = 'block';
-    document.getElementById('article1').style.display = 'none';
-    document.getElementById('article2').style.display = 'none';
-    document.getElementById('article3').style.display = 'none';
-    document.getElementById('article5').style.display = 'none';
-
+    return articleDisplay(3);
 }
 
 function fifthDot() {
-    document.getElementById('article5').style.display = 'block';
-    document.getElementById('article1').style.display = 'none';
-    document.getElementById('article2').style.display = 'none';
-    document.getElementById('article3').style.display = 'none';
-    document.getElementById('article4').style.display = 'none';
-
+    return articleDisplay(4);
 }
