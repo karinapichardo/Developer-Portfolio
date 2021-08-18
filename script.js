@@ -12,6 +12,10 @@ function hamburgerMenu() {
 //functionality for color mode element
 
 function colorMode() {
+
+    const colorModeDiv = document.querySelector('.color-mode');
+    const colorModeTitle = document.querySelector('.color-title');
+
     document.body.style.backgroundColor = 'black';
     document.body.style.color = 'white';
     document.querySelector('.name-logo').style.color = 'black';
@@ -29,6 +33,12 @@ function colorMode() {
     for (i = 0; i < x.length; i++) {
         x[i].style.backgroundColor = '#ff94b4';
         x[i].style.opacity = '1';
+    }
+
+    if (colorModeDiv.style.display === 'none') {
+        colorModeTitle.textContent = 'Light Mode';
+    } else {
+        colorModeTitle.textContent = 'Dark Mode';
     }
 }
 
@@ -62,22 +72,32 @@ function articleDisplay(indexNum) {
     }
 }
 
-function firstDot() {
-    return articleDisplay(0);
+const dots = document.querySelectorAll('.dot');
+//console.log(dots[0]);
+
+for (let i = 0; i < dots.length; i++) {
+    if (dots[i]) {
+        articleDisplay([i]);
+    }
+
 }
 
-function secondDot() {
-    return articleDisplay(1);
-}
-
-function thirdDot() {
-    return articleDisplay(2);
-}
-
-function fourthDot() {
-    return articleDisplay(3);
-}
-
-function fifthDot() {
-    return articleDisplay(4);
-}
+//function firstDot() {
+//    return articleDisplay(0);
+//}
+//
+//function secondDot() {
+//    return articleDisplay(1);
+//}
+//
+//function thirdDot() {
+//    return articleDisplay(2);
+//}
+//
+//function fourthDot() {
+//    return articleDisplay(3);
+//}
+//
+//function fifthDot() {
+//    return articleDisplay(4);
+//}
