@@ -76,32 +76,22 @@ function articleDisplay(indexNum) {
     }
 }
 
-const dots = document.querySelectorAll('.dot');
-//console.log(dots[0]);
-
-for (let i = 0; i < dots.length; i++) {
-    if (dots[i]) {
-        articleDisplay([i]);
-    }
-
+function firstDot() {
+    return articleDisplay(0);
 }
 
-//function firstDot() {
-//    return articleDisplay(0);
-//}
-//
-//function secondDot() {
-//    return articleDisplay(1);
-//}
-//
-//function thirdDot() {
-//    return articleDisplay(2);
-//}
-//
-//function fourthDot() {
-//    return articleDisplay(3);
-//}
-//
-//function fifthDot() {
-//    return articleDisplay(4);
-//}
+function secondDot() {
+    return articleDisplay(1);
+}
+
+function thirdDot() {
+    return articleDisplay(2);
+}
+
+function fourthDot() {
+    return articleDisplay(3);
+}
+
+function fifthDot() {
+    return articleDisplay(4);
+}
