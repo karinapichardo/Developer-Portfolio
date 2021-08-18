@@ -29,6 +29,10 @@ nav {
 
 }
 
+.feather-moon {
+    display: none;
+}
+
 nav #main-nav {
     display: none;
     margin-top: -5px;
