@@ -15,6 +15,8 @@ function colorMode() {
 
     const colorModeDiv = document.querySelector('.color-mode');
     const colorModeTitle = document.querySelector('.color-title');
+    const moonSvg = document.querySelector('.feather-moon');
+    const sunSvg = document.querySelector('.feather-sun');
 
     document.body.style.backgroundColor = 'black';
     document.body.style.color = 'white';
@@ -39,6 +41,8 @@ function colorMode() {
         colorModeTitle.textContent = 'Light Mode';
     } else {
         colorModeTitle.textContent = 'Dark Mode';
+        moonSvg.style.display = 'inline-block';
+        sunSvg.style.display = 'none';
     }
 }
 
