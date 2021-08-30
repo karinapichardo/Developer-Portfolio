@@ -47,8 +47,36 @@ nav a.icon {
     top: 25px;
 }
 
+/*key frames*/
+
+@keyframes offset {
+    100% {
+        stroke-dashoffset: 0;
+
+    }
+}
+
+@keyframes fill-it {
+    100% {
+        fill: black;
+    }
+}
+
+/*svg styles*/
+
 .name-logo {
     margin-left: 10px;
+}
+
+.logo {
+    stroke: black;
+    stroke-width: 2;
+    stroke-dasharray: 6027;
+    stroke-dashoffset: 6027;
+
+
+    animation: offset 5s linear forwards,
+        fill-it .8s 1s forwards;
 }
 
 #main-nav li a {
